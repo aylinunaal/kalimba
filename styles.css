@@ -1,0 +1,153 @@
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FEBA17;
+}
+img{
+    width: 3.5rem;
+}
+body{
+    background-color: #F8F4E1;
+}
+
+
+.ground{
+  width: 50vw;
+  height: 100vh;
+
+  background-color: #74512D;
+  background-image: url("https://www.transparenttextures.com/patterns/wood-pattern.png");
+
+  clip-path: polygon(
+    5% 0%, 95% 0%, /* üst köşeler */
+    100% 90%, 0% 90% /* alt köşeler üçgen gibi */
+  );
+
+border-top-right-radius: 15vh;
+border-top-left-radius: 15vh;
+border-bottom-left-radius: 20vh;
+border-bottom-right-radius: 20vh;
+  
+  
+ 
+}
+.canva{
+    display: flex;
+    justify-content: center;
+}
+.notes{
+    display: flex;
+    flex-direction: row;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    justify-content:space-evenly;
+    
+  
+}
+.circle {
+    width: 20vh;
+    height: 20vh;
+    background: radial-gradient(circle at 30% 30%, #1d0a00, #471e02 60%, #140701);
+    position: relative;
+    top: 15vh;
+    left: 40%;
+    border-radius: 50%;
+    box-shadow:
+        inset 5px 5px 15px rgba(0, 0, 0, 0.6),
+        inset -5px -5px 10px rgba(255, 255, 255, 0.05),
+        0 5px 15px rgba(0, 0, 0, 0.3);
+}
+.note{
+    height: 25vh;
+    padding-bottom: 0;
+    width: 6vh;
+    background: linear-gradient(
+    45deg,
+    #585858 5%,
+    #616161 10%,
+    #9e9c9c 30%,
+    #ddd 50%,
+    #c7c2c2 70%,
+    #fffbfb 80%,
+    #dddada 95%
+  );
+    border-radius: 15%;
+    border:transparent;
+    margin-right: 1.1vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2vh; /* Üstten biraz boşluk bırakmak istersen */
+    font-family: "Libre Baskerville", serif;
+    font-size: 1rem;
+    font-weight: 700;
+    font-style: normal;
+    color:black;
+    
+}
+.pressed {
+    background: linear-gradient(
+        45deg,
+        #3a3a3a 5%,
+        #444 10%,
+        #666 30%,
+        #888 50%,
+        #aaa 70%,
+        #bbb 80%,
+        #ccc 95%
+      );
+    
+  }
+
+
+.bottom{
+    align-self: center;
+}
+
+.two,.ten{
+    height: 29vh;
+}
+.three,.nine{
+    height: 33vh;
+}
+.four,.eight{
+    height: 37vh;
+}
+.five,.seven{
+    height: 41vh;
+}
+.six{
+    height: 45vh;
+}
+
+.noteHolder{
+    width: 100%;
+    height: 1.5vh;
+    position: relative;
+    top: 6vh;
+    background: linear-gradient(
+    180deg,
+    #585858 5%,
+    #616161 10%,
+    #9e9c9c 30%,
+    #ddd 50%,
+    #c7c2c2 70%,
+    #fffbfb 80%,
+    #dddada 95%
+  );
+}
+
+footer{
+    text-align: center;
+    font-family: "Libre Baskerville", serif;
+    font-weight: 700;
+    font-style: normal;
+    color: #FEBA17;
+    font-size: larger;
+}
